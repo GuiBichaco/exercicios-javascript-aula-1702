@@ -207,6 +207,8 @@ Crie uma arrow function chamada mensagemBoasVindas que recebe um nome e retorna 
 // console.log(mensagemBoasVindas("Ana"));    // "Seja bem-vindo, Ana!"
 
 //Resposta:
+const mensagemBoasVindasExemplo = nome => "Seja bem-vindo, " + [nome] + "!";
+console.log(mensagemBoasVindasExemplo("Ana"));
 
 /*Exercício 4: Higher-Order Function personalizada
 Crie uma função chamada executarOperacao que recebe três parâmetros: dois números e uma função que representa uma operação matemática (adição, subtração, multiplicação ou divisão).
