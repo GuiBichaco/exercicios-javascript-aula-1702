@@ -219,6 +219,16 @@ Em seguida, chame essa função passando diferentes operações matemáticas com
 // console.log(executarOperacao(4, 5, (a, b) => a * b)); // 20
 
 //Resposta:
+// const aplicarOperacao = (a, b, operacao) => operacao(a, b);
+// console.log(aplicarOperacao(5, 3, (x, y) => x + y)); // 8
+// console.log(aplicarOperacao(10, 2, (x, y) => x * y)); // 20
+
+const executarOperacao = (a, b, operacao) => operacao(a, b);
+console.log(executarOperacao(9, 1, (a, b) => a + b));
+console.log(executarOperacao(10, 5, (a, b) => a - b)); 
+console.log(executarOperacao(5, 2, (a, b) => a * b)); 
+console.log(executarOperacao(50, 2, (a, b) => a / b)); 
+
 
 /*Exercício 5: map() – Transformação de um array
 Crie um array de preços de produtos e use o método map() para aplicar um desconto de 10% em cada preço.*/
