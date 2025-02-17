@@ -163,3 +163,80 @@ console.log(maioresDeIdade); // [22, 30, 18]
 const valores = [10, 20, 30, 40];
 const soma = valores.reduce((total, num) => total + num, 0);
 console.log(soma); // 100
+
+////////////////////
+
+//Exercícios de Arrow Functions e Higher-Order Functions.
+
+/*Exercício 1: Arrow Function com um parâmetro
+Crie uma arrow function chamada dobro que recebe um número e retorna o dobro dele.
+Dica: Não use {} nem return, pois a função pode ser simplificada.*/
+
+// 📌 Exemplo de entrada e saída esperada:
+// console.log(dobro(7)); // 14
+// console.log(dobro(15)); // 30
+
+//Resposta:
+
+const dobroDeValor = x => x*2;
+console.log(dobroDeValor(2));
+
+/*Exercício 2: Arrow Function com múltiplos parâmetros
+Crie uma arrow function chamada dividir que recebe dois números e retorna o resultado da divisão do primeiro pelo segundo.*/
+
+// 📌 Exemplo de entrada e saída esperada:
+// console.log(dividir(10, 2)); // 5
+// console.log(dividir(9, 3));  // 3
+
+//Resposta:
+
+/*Exercício 3: Arrow Function com múltiplas linhas
+Crie uma arrow function chamada mensagemBoasVindas que recebe um nome e retorna uma mensagem de boas-vindas no formato "Seja bem-vindo, [nome]!".*/
+
+// 📌 Exemplo de entrada e saída esperada:
+// console.log(mensagemBoasVindas("Carlos")); // "Seja bem-vindo, Carlos!"
+// console.log(mensagemBoasVindas("Ana"));    // "Seja bem-vindo, Ana!"
+
+//Resposta:
+
+/*Exercício 4: Higher-Order Function personalizada
+Crie uma função chamada executarOperacao que recebe três parâmetros: dois números e uma função que representa uma operação matemática (adição, subtração, multiplicação ou divisão).
+Em seguida, chame essa função passando diferentes operações matemáticas como arrow functions.*/
+
+// 📌 Exemplo de entrada e saída esperada:
+// console.log(executarOperacao(6, 3, (a, b) => a - b)); // 3
+// console.log(executarOperacao(4, 5, (a, b) => a * b)); // 20
+
+//Resposta:
+
+/*Exercício 5: map() – Transformação de um array
+Crie um array de preços de produtos e use o método map() para aplicar um desconto de 10% em cada preço.*/
+
+// 📌 Exemplo de entrada e saída esperada:
+// const precos = [100, 200, 300, 400];
+// const precosComDesconto = /* aplique map() aqui */;
+// console.log(precosComDesconto); // [90, 180, 270, 360]
+
+//Resposta:
+
+/*Exercício 6: filter() – Filtrando valores em um array
+Crie um array com idades e use o método filter() para retornar apenas as idades menores que 18 anos.*/
+
+// 📌 Exemplo de entrada e saída esperada:
+// const idades = [12, 25, 17, 30, 14, 19];
+// const menoresDeIdade = /* aplique filter() aqui */;
+// console.log(menoresDeIdade); // [12, 17, 14]
+
+//Resposta:
+
+/*Exercício 7: reduce() – Somando valores de um array
+Crie um array com números e use o método reduce() para calcular o produto (multiplicação de todos os números).*/
+
+// 📌 Exemplo de entrada e saída esperada:
+// const numeros = [2, 3, 4, 5];
+// const produto = /* aplique reduce() aqui */;
+// console.log(produto); // 120 (pois 2 * 3 * 4 * 5 = 120)
+
+//Resposta:
+
+//Esses exercícios ajudarão a reforçar o aprendizado sobre Arrow Functions e Higher-Order Functions no JavaScript. 🚀
