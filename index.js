@@ -122,10 +122,10 @@ const multiplicar = (a, b) => a * b;
 console.log(multiplicar(3, 4)); // 12
 
 //Se houver mais de uma linha no corpo da função, é necessário usar {} e a palavra-chave return explicitamente:
-const saudacao = (nome) => {
+const saudacaoPessoa = (nome) => {
     return `Olá, ${nome}!`;
 };
-console.log(saudacao("João")); // "Olá, João!"
+console.log(saudacaoPessoa("João")); // "Olá, João!"
 
 // As arrow functions não possuem seu próprio this, herdando o this do escopo onde foram declaradas. 
 // Isso evita problemas comuns ao usar funções em eventos e objetos.
@@ -143,9 +143,9 @@ function somar(x, y) {
 console.log(aplicarOperacao(5, 3, somar)); // 8
 
 //Com Arrow Functions, podemos simplificar ainda mais:
-const aplicarOperacao = (a, b, operacao) => operacao(a, b);
-console.log(aplicarOperacao(5, 3, (x, y) => x + y)); // 8
-console.log(aplicarOperacao(10, 2, (x, y) => x * y)); // 20
+const aplicarOperacao1 = (a, b, operacao) => operacao(a, b);
+console.log(aplicarOperacao1(5, 3, (x, y) => x + y)); // 8
+console.log(aplicarOperacao1(10, 2, (x, y) => x * y)); // 20
 
 // Exemplos comuns de Higher-Order Functions no JavaScript:
 // Várias funções da API do JavaScript utilizam esse conceito, como map(), filter() e reduce().
@@ -165,7 +165,7 @@ const soma = valores.reduce((total, num) => total + num, 0);
 console.log(soma); // 100
 
 ////////////////////
-
+console.log("/////////////////INICIO DOS EXERCICIOS DE Arrow Functions e Higher-Order Functions///////////////////////////")
 //Exercícios de Arrow Functions e Higher-Order Functions.
 
 /*Exercício 1: Arrow Function com um parâmetro
@@ -177,6 +177,9 @@ Dica: Não use {} nem return, pois a função pode ser simplificada.*/
 // console.log(dobro(15)); // 30
 
 //Resposta:
+//Apenas um parâmetro
+// const quadrado = x => x * x;
+// console.log(quadrado(4)); // 16
 
 const dobroDeValor = x => x*2;
 console.log(dobroDeValor(2));
@@ -189,6 +192,12 @@ Crie uma arrow function chamada dividir que recebe dois números e retorna o res
 // console.log(dividir(9, 3));  // 3
 
 //Resposta:
+//Apenas múltiplos parâmetros
+// const multiplicar = (a, b) => a * b;
+// console.log(multiplicar(3, 4)); // 12
+
+const dividirValores = (a, b) => a/b;
+console.log(dividirValores(100,2));
 
 /*Exercício 3: Arrow Function com múltiplas linhas
 Crie uma arrow function chamada mensagemBoasVindas que recebe um nome e retorna uma mensagem de boas-vindas no formato "Seja bem-vindo, [nome]!".*/
