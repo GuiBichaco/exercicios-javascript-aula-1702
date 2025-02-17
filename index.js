@@ -176,11 +176,13 @@ Dica: Não use {} nem return, pois a função pode ser simplificada.*/
 // console.log(dobro(7)); // 14
 // console.log(dobro(15)); // 30
 
-//Resposta:
+
 //Apenas um parâmetro
+//Estrutura:
 // const quadrado = x => x * x;
 // console.log(quadrado(4)); // 16
 
+//Resposta:
 const dobroDeValor = x => x*2;
 console.log(dobroDeValor(2));
 
@@ -191,11 +193,12 @@ Crie uma arrow function chamada dividir que recebe dois números e retorna o res
 // console.log(dividir(10, 2)); // 5
 // console.log(dividir(9, 3));  // 3
 
-//Resposta:
 //Apenas múltiplos parâmetros
+//Estrutura:
 // const multiplicar = (a, b) => a * b;
 // console.log(multiplicar(3, 4)); // 12
 
+//Resposta:
 const dividirValores = (a, b) => a/b;
 console.log(dividirValores(100,2));
 
@@ -218,11 +221,13 @@ Em seguida, chame essa função passando diferentes operações matemáticas com
 // console.log(executarOperacao(6, 3, (a, b) => a - b)); // 3
 // console.log(executarOperacao(4, 5, (a, b) => a * b)); // 20
 
-//Resposta:
+
+//Estrutura:
 // const aplicarOperacao = (a, b, operacao) => operacao(a, b);
 // console.log(aplicarOperacao(5, 3, (x, y) => x + y)); // 8
 // console.log(aplicarOperacao(10, 2, (x, y) => x * y)); // 20
 
+//Resposta:
 const executarOperacao = (a, b, operacao) => operacao(a, b);
 console.log(executarOperacao(9, 1, (a, b) => a + b));
 console.log(executarOperacao(10, 5, (a, b) => a - b)); 
@@ -238,7 +243,16 @@ Crie um array de preços de produtos e use o método map() para aplicar um desco
 // const precosComDesconto = /* aplique map() aqui */;
 // console.log(precosComDesconto); // [90, 180, 270, 360]
 
+
+//Estrutura:
+// const numeros = [1, 2, 3, 4];
+// const dobrados = numeros.map(num => num * 2);
+// console.log(dobrados); // [2, 4, 6, 8]
+
 //Resposta:
+const precos = [100, 200, 300, 400];
+const precosComDesconto = precos.map(preco => preco * 0.90);
+console.log(precosComDesconto); 
 
 /*Exercício 6: filter() – Filtrando valores em um array
 Crie um array com idades e use o método filter() para retornar apenas as idades menores que 18 anos.*/
@@ -248,7 +262,15 @@ Crie um array com idades e use o método filter() para retornar apenas as idades
 // const menoresDeIdade = /* aplique filter() aqui */;
 // console.log(menoresDeIdade); // [12, 17, 14]
 
+//Estrutura:
+// const idades = [10, 22, 30, 15, 18];
+// const maioresDeIdade = idades.filter(idade => idade >= 18);
+// console.log(maioresDeIdade); // [22, 30, 18]
+
 //Resposta:
+const idadesValores = [12, 25, 17, 30, 14, 19];
+const menoresDeIdade = idadesValores.filter(idade => idade <= 18);
+console.log(menoresDeIdade); 
 
 /*Exercício 7: reduce() – Somando valores de um array
 Crie um array com números e use o método reduce() para calcular o produto (multiplicação de todos os números).*/
@@ -258,6 +280,14 @@ Crie um array com números e use o método reduce() para calcular o produto (mul
 // const produto = /* aplique reduce() aqui */;
 // console.log(produto); // 120 (pois 2 * 3 * 4 * 5 = 120)
 
+//Estrutura:
+// const valores = [10, 20, 30, 40];
+// const soma = valores.reduce((total, num) => total + num, 0);
+// console.log(soma); // 100
+
 //Resposta:
+const numerosArray = [2, 3, 4, 5];
+const produto = numerosArray.reduce((total, num) => total * num, 1);
+console.log(produto); 
 
 //Esses exercícios ajudarão a reforçar o aprendizado sobre Arrow Functions e Higher-Order Functions no JavaScript. 🚀
