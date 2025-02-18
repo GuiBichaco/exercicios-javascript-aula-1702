@@ -403,3 +403,11 @@ console.log(data1.isSame(data2)); // false
 // Moment.js também permite converter para timestamps:
 const data10 = moment("2025-02-16");
 console.log(data10.valueOf()); // Retorna timestamp em milissegundos
+
+
+// O que vocês vão aprender com esse exercício (index.html):
+// ✅ Como criar e manipular datas com o objeto Date.
+// ✅ Como extrair informações de uma data (dia, mês, ano, etc.).
+// ✅ Como formatar datas para exibição amigável.
+// ✅ Como adicionar e subtrair tempo de uma data.
+// ✅ Como utilizar Moment.js para facilitar a manipulação de datas.
